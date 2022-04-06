@@ -18,11 +18,13 @@ extension RandomAnimate {
         var randomAnimate: [RandomAnimate] = []
         
         for _ in 0...1000 {
-            let options = RandomAnimate(preset: DataManager.shared.animations.randomElement() ?? "ERROR",
-                                        curve: DataManager.shared.animations.randomElement() ?? "ERROR",
-                                        force: Float.random(in: 1...3),
-                                        duration: Float.random(in: 0.5...2.2),
-                                        delay: Float.random(in: 0.0...0.8))
+            let options = RandomAnimate(
+                preset: DataManager.shared.animations.randomElement() ?? "ERROR",
+                curve: DataManager.shared.animations.randomElement() ?? "ERROR",
+                force: Float.random(in: 1...3),
+                duration: Float.random(in: 0.5...2.2),
+                delay: Float.random(in: 0.0...0.8)
+            )
             randomAnimate.append(options)
         }
         return randomAnimate
