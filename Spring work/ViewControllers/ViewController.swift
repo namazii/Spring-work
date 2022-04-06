@@ -35,9 +35,9 @@ class ViewController: UIViewController {
         
         animateIndex += 1
         
-        let force = String(format: "%.1f", animations[animateIndex].force)
-        let duration = String(format: "%.1f", animations[animateIndex].duration)
-        let delay = String(format: "%.1f", animations[animateIndex].delay)
+        let force = String(format: "%.2f", animations[animateIndex].force)
+        let duration = String(format: "%.2f", animations[animateIndex].duration)
+        let delay = String(format: "%.2f", animations[animateIndex].delay)
         optionsLabel.text = """
 preset: \(animatedView.animation)
 curve: \(animatedView.curve)
